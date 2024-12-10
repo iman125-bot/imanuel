@@ -68,7 +68,7 @@
         /* Bagian Konten */
         .section {
             background-color: white;
-            margin: 2rem 0;
+            margin: 3,5rem;
             padding: 2rem;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -86,6 +86,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            margin: 20px;
         }
         .activity-card {
             width: 30%;
@@ -103,7 +104,7 @@
         }
         .activity-card img {
             max-width: 150px;
-            margin-bottom: 1rem;
+            margin-bottom: 20rem;
         }
 
         /* Galeri */
@@ -158,6 +159,36 @@
                 margin: 10px 0;
             }
         }
+        /* Tambahkan di bagian akhir file CSS */
+
+/* Gambar Galeri Responsif */
+.gallery-item img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .gallery-item {
+        width: 100%;
+    }
+    .gallery-item img {
+        max-height: 200px;
+    }
+}
+
+/* Gambar Kegiatan Responsif */
+.activity-card img {
+    max-width: 100px;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .activity-card img {
+        max-width: 80px;
+    }
+}
     </style>
 </head>
 <body>
@@ -192,18 +223,18 @@
         <div class="activities">
             <div class="activity-card">
                 <img src="satu.jpg" alt="Pelatihan Keterampilan">
-                <h3>Potong Daging</h3>
-                <p>"Gotong royong mempersiapkan hidangan spesial, suasana kekeluargaan di tengah alam. 🌿🍖 #Kebersamaan #Tradisi"</p>
+                <h3>MAREN</h3>
+                <p>Gotong Royong, Memotong daging adalah satu bentuk kerja sama untuk mempersiapkan hidangan serta memberikan suasana kekeluargaan yang harmonis.</p>
             </div>
             <div class="activity-card">
                 <img src="posyandu.jpg" alt="Kepemimpinan Komunitas">
-                <h3>Posyandu Remaja</h3>
-                <p>"Para remaja sedang beraktivitas di Posyandu Remaja, didampingi oleh seorang kader. Mereka tampak antusias mengikuti kegiatan yang bertujuan meningkatkan kesehatan dan kesejahteraan generasi muda."</p>
+                <h3>POSYANDU REMAJA</h3>
+                <p>Para remaja sedang beraktivitas di Posyandu Remaja, didampingi oleh seorang kader. Mereka tampak antusias mengikuti kegiatan yang bertujuan meningkatkan kesehatan dan kesejahteraan generasi muda</p>
             </div>
             <div class="activity-card">
                 <img src="dua.jpg" alt="Wirausaha Muda">
-                <h3>Pembuatan Pohon Natal</h3>
-                <p>Ketika kreativitas bertemu dengan daur ulang, jadilah pohon Natal unik dari botol bekas! 🌟🍾 #KreasiRamahLingkungan #DaurUlang"</p>
+                <h3>PEMBUATAN POHON NATAL</h3>
+                <p>Anak muda kampung menunjukkan kreativitas tinggi dengan membuat pohon Natal dari botol bekas yang dihias cantik, mengubah sampah menjadi karya seni yang ramah lingkungan</p>
             </div>
         </div>
     </section>
@@ -228,7 +259,7 @@
                 <img src="enam.jpg" alt="Kegiatan Pemuda 5">
             </div>
             <div class="gallery-item">
-                <img src="tujuh.jpg" alt="Kegiatan Pemuda 6">
+                <img src="tujuh1.jpg" alt="Kegiatan Pemuda 6">
             </div>
         </div>
     </section>
@@ -239,12 +270,10 @@
         <div style="display: flex; justify-content: center; margin-top: 2rem;">
             <video width="800" height="450" controls>
                 <source src="video.mp4" type="video/mp4">
-                Browser Anda tidak mendukung elemen video.
             </video>
         </div>
-        <p style="margin-top: 1rem; text-align: center;">Video Pemuda Ohoi dalam Kegiatan Pengembangan Masyarakat</p>
     </section>
-    
+
     <!-- Kontak -->
     <section id="kontak" class="container section">
         <h2 class="section-title">Hubungi Kami</h2>
@@ -270,13 +299,11 @@
         </div>
     </footer>
 
-    <!-- Catatan untuk Menambahkan Gambar -->
-    <!-- 
-    Untuk menambahkan gambar, ganti src pada tag <img> dengan path atau URL gambar yang sebenarnya.
-    Contoh: 
-    - Jika gambar ada di folder yang sama: <img src="nama-gambar.jpg" alt="Deskripsi Gambar">
-    - Jika gambar di subfolder: <img src="images/nama-gambar.jpg" alt="Deskripsi Gambar">
-    - Jika gambar dari internet: <img src="https://contoh.com/gambar.jpg" alt="Deskripsi Gambar">
-    -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="https://www.instagram.com/pemuda.tew_nalak?igsh=eWFzOGx2bWdldWg3">Instagram 1</a></li>
+            <li><a href="https://www.instagram.com/officialngayub/profilecard/?igsh=aXk4bmkyZTRndjBm">Instagram 2</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
